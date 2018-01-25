@@ -21,6 +21,12 @@
   <h4>Trucker informations</h4>
   <div id="trucker">
     <form>
+        <!--<label for="trucker-selection">Trucker name</label>
+        <select id ="trucker-selection">
+            <option >les-routiers-bretons</option>
+            <option >Geodis</option>
+            <option >Xpo</option>
+        </select>-->
       <input class="name" type="text" placeholder="Trucker name" />
       <input class="price-by-km" type="number" placeholder="Price by km" />
       <input class="price-by-cubic" type="number" placeholder="Price by m3" />
@@ -29,11 +35,12 @@
   </div>
   <h4>Shipper informations</h4>
   <div id="shipper">
-    <input class="name" type="text" placeholder="Shipper name" />
+
+    <label><input class="name" type="text" placeholder="Shipper name" /></label>
     <input class="distance" type="number" placeholder="Distance in km" />
     <input class="volume" type="number" placeholder="Volume in m3" />
 
-    <label><input class="option" type="checkbox" name="deduction-box" value="" placeholder="Deductible option"> Deductible Option</label>
+    <label><input class="option" type="checkbox" name="deduction-box" value="" placeholder="Deductible option">Deductible Option (additional 1€/M3)</label>
   </div>
   <button id="compute">Compute</button>
   <div id="actors"></div>

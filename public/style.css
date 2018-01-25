@@ -23,7 +23,19 @@ input {
     border: 2px solid #5D6063;    /* Dark gray */
     border-radius: 5px;
   
-    width: 200px;
+    width: 150px;
     margin: 20px auto;
   }
   
+  input[type=text] {
+    border: none;
+  border-bottom: 2px solid rgb(0, 110, 255);
+  
+}
+
+input[type=number] {
+  border: none;
+  border-bottom: 2px solid red;
+  
+}
+
