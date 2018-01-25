@@ -1,0 +1,29 @@
+body,h4 {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(0, 0, 0);
+    background-color: #BBDEFB;
+}
+
+
+input {
+    margin: 30px 25px;
+    width: auto;
+    /*display: block;
+    /* border: none;* */
+    padding: 10px 0;
+ }
+
+
+  #compute {
+    color: #FFF;
+    background-color: #90CAF9;    /* Blue */
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #5D6063;    /* Dark gray */
+    border-radius: 5px;
+  
+    width: 200px;
+    margin: 20px auto;
+  }
+  

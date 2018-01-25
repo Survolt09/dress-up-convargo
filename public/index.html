@@ -1,23 +1,44 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>CSS/HTML Workshop with Convargo</title>
-  </head>
-  <body>
-    <div id="trucker">
-      <input class="name" type="text" placeholder="Trucker name"/>
-      <input class="price-by-km" type="number" placeholder="Price by km"/>
-      <input class="price-by-cubic" type="number" placeholder="Price by m3"/>
-    </div>
-    <div id="shipper">
-      <input class="name" type="text" placeholder="Shipper name"/>
-      <input class="distance" type="number" placeholder="Distance in km"/>
-      <input class="volume" type="number" placeholder="Volume in m3"/>
-      <input class="option" type="checkbox" placeholder="Deductible option"/>
-    </div>
-    <button id="compute">Compute</button>
-    <div id="actors"></div>
-    <script src="convargo.js"></script>
-    <script src="index.js"></script>
-  </body>
+
+<head>
+
+  <title>CSS/HTML Workshop with Convargo</title>
+  <link rel='stylesheet' href='style.css' />
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+
+  <!-- <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,500,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//storage.googleapis.com/code.getmdl.io/1.0.1/material.teal-red.min.css" />
+    <script src="//storage.googleapis.com/code.getmdl.io/1.0.1/material.min.js"></script>-->
+
+</head>
+
+<body>
+  <h1>Welcome to Convargo !</h1>
+
+  <p>You are going to use the price calculator, just enter your shipping information and get the instant price by clicking on the compute button.</p>
+  <h4>Trucker informations</h4>
+  <div id="trucker">
+    <form>
+      <input class="name" type="text" placeholder="Trucker name" />
+      <input class="price-by-km" type="number" placeholder="Price by km" />
+      <input class="price-by-cubic" type="number" placeholder="Price by m3" />
+    </form>
+
+  </div>
+  <h4>Shipper informations</h4>
+  <div id="shipper">
+    <input class="name" type="text" placeholder="Shipper name" />
+    <input class="distance" type="number" placeholder="Distance in km" />
+    <input class="volume" type="number" placeholder="Volume in m3" />
+
+    <label><input class="option" type="checkbox" name="deduction-box" value="" placeholder="Deductible option"> Deductible Option</label>
+  </div>
+  <button id="compute">Compute</button>
+  <div id="actors"></div>
+  <script src="convargo.js"></script>
+  <script src="index.js"></script>
+</body>
+
 </html>
