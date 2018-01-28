@@ -6,43 +6,87 @@
   <title>CSS/HTML Workshop with Convargo</title>
   <link rel='stylesheet' href='style.css' />
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-  <!-- <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,500,400italic,700,700italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="//storage.googleapis.com/code.getmdl.io/1.0.1/material.teal-red.min.css" />
-    <script src="//storage.googleapis.com/code.getmdl.io/1.0.1/material.min.js"></script>-->
 
 </head>
 
 <body>
-  <h1>Welcome to Convargo !</h1>
+    
+    <div class="convargo-title">
+        <hr id="convargo-line" width =1000px>
+        <h1 align=center><b>CONVARGO</b></h1>
+        <h2 align=center><i>The transport revolution !</i></h2>
+    </div>
+    
 
-  <p>You are going to use the price calculator, just enter your shipping information and get the instant price by clicking on the compute button.</p>
-  <h4>Trucker informations</h4>
+   
+
+    <div >
+      <img src="truck.jpg" alt="Road-truck">
+    </div>
+
+  <div id="transition"></div>
+
+  <div >
+    <h1 id="welcome" style="text-align : center;">Welcome to Convargo ! What do you want to send ? </h1>
+    <h2 id="explainations" style="text-align : center;">Enter your shipping informations and get the instant price by clicking on the compute button.</h2>
+  </div>
+  
+  <br>
+
   <div id="trucker">
-    <form>
-        <!--<label for="trucker-selection">Trucker name</label>
-        <select id ="trucker-selection">
-            <option >les-routiers-bretons</option>
-            <option >Geodis</option>
-            <option >Xpo</option>
-        </select>-->
-      <input class="name" type="text" placeholder="Trucker name" />
-      <input class="price-by-km" type="number" placeholder="Price by km" />
-      <input class="price-by-cubic" type="number" placeholder="Price by m3" />
-    </form>
-
+    
+    <fieldset class="fieldset" style="border:black 2px solid;" >
+      <legend>Trucker informations</legend>
+      <p>
+          <label>Enter the trucker's name : </label><input class="name" type="text" placeholder=" Trucker name" />
+      </p>
+      <p>
+          <label>Enter the trucker's price per kilometers : </label><input class="price-by-km" type="number" placeholder=" Price by km" />
+      </p>
+      <p>
+          <label>Enter the trucker's price per cubic meter : </label><input class="price-by-cubic" type="number" placeholder=" Price by m3" />
+      </p>
+      
+    </fieldset>
+    
   </div>
-  <h4>Shipper informations</h4>
-  <div id="shipper">
 
-    <label><input class="name" type="text" placeholder="Shipper name" /></label>
-    <input class="distance" type="number" placeholder="Distance in km" />
-    <input class="volume" type="number" placeholder="Volume in m3" />
+  <br>
+  <br>
 
-    <label><input class="option" type="checkbox" name="deduction-box" value="" placeholder="Deductible option">Deductible Option (additional 1€/M3)</label>
+  <div id="shipper" style =" text-align: center;">
+      <fieldset class="fieldset" style="border:black 2px solid;">
+          <legend>Shipper informations</legend>
+          <form action="">
+            <p>
+              <label>Enter the shipper's name : </label><input class="name" type="text" placeholder=" Shipper name" />
+            </p>
+            <p>
+                <label>Enter the distance of the delivery : </label><input class="distance" type="number" placeholder=" Distance in km" />
+            </p>
+            <p>
+                <label>Enter the volume to transport : </label><input class="volume" type="number" placeholder=" Volume in m3" />
+            </p>
+            
+          </form>
+          
+      </fieldset>
+    <br>
+    
+    <p>
+      <hr class="hr-style">
+        <label  size="25"> <input class="option" type="checkbox" name="deduction-box" value="" placeholder="Deductible option">  Deductible Option (additional 1€/M3)</label>
+      <hr class="hr-style">
+    </p>
+    
   </div>
-  <button id="compute">Compute</button>
+  <div class="compute-button" style="text-align : center;"> 
+      <button id="compute">Compute</button>
+  </div>
+
+
   <div id="actors"></div>
   <script src="convargo.js"></script>
   <script src="index.js"></script>
